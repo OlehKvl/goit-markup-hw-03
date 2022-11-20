@@ -159,7 +159,7 @@ img {
 
   font-weight: 900;
   font-size: 44px;
-  line-height: 1.5;
+  line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--third-text-color);
@@ -203,7 +203,6 @@ img {
 
 .benefits-list .item {
   width: 270px;
-  margin-right: ;
 }
 
 .benefits-list .item:not(:last-child) {
@@ -277,8 +276,6 @@ img {
 }
 
 .team-name {
-  margin-top: 30px;
-
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -289,13 +286,17 @@ img {
 
 .team-description {
   margin-top: 10px;
-  margin-bottom: 30px;
 
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--second-text-color);
+}
+
+.card {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 /* Футер */
 
@@ -316,12 +317,11 @@ footer {
 }
 
 .address-list {
+  display: inline-block;
   margin-top: 20px;
 }
 
 .address-link {
-  margin-bottom: 9px;
-
   font-style: normal;
   font-size: 14px;
   line-height: 1.7;
@@ -329,8 +329,6 @@ footer {
   color: var(--third-text-color);
 }
 .address-item {
-  margin-bottom: 9px;
-
   font-style: normal;
   font-size: 14px;
   line-height: 1.7;
@@ -343,6 +341,9 @@ footer {
   color: var(--accent-color);
 }
 
+.address-list .item:not(:last-child) {
+  margin-bottom: 9px;
+}
 /* ----ПОРТФОЛІО--- */
 
 .portfolio {
@@ -395,9 +396,7 @@ footer {
 }
 
 .portfolio-title {
-  margin-top: 20px;
   margin-bottom: 4px;
-  margin-left: 24px;
 
   font-size: 18px;
   line-height: 2;
@@ -406,11 +405,12 @@ footer {
 }
 
 .portfolio-subtitle {
-  margin-bottom: 20px;
-  margin-left: 24px;
-
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--second-text-color);
+}
+
+.portfolio-card {
+  padding: 20px 24px;
 }
